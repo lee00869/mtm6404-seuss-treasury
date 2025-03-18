@@ -18,14 +18,14 @@ console.log(quotes);
         <>
              <Nav />
             <h1>Seuss Treasury</h1>
-            <div>
+            <div className="quote-flex">
                 {quotes.map((quote) => (
-                    <div key={quote.id}>
+                    <div key={quote.id} className="quote-border">
                          <p>
-                            <strong>{quote.book?.title}</strong>
+                            <strong>Book Title: </strong>{quote.book?.title}
                         </p>
                         <p>
-                            <strong>{quote.text}</strong>
+                            <strong>Quote: </strong> {quote.text}
                         </p>
                     </div>
                 ))}

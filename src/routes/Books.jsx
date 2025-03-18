@@ -18,9 +18,9 @@ useEffect(() => {
         <>
              <Nav />
             <h1>Seuss Treasury</h1>
-            <div>
+            <div className="books-img">
                 {books.map((book) => (
-                    <div key={book.id}>
+                    <div key={book.id} >
                         <Link to={`/books/${book.id}`}>
                         <img src={book.image}/>
                         </Link>

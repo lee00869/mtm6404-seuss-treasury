@@ -20,9 +20,11 @@ export const Book = () =>{
     return(
         <>
             <Nav />
+            <div className="book-flex">
             <div>
             <img src={book.image}/>
             </div>
+            <div>
             <h1>{book.title}</h1>
             <p>
                 <strong>Title: </strong>{book.title_sort}
@@ -33,6 +35,8 @@ export const Book = () =>{
             <p>
                 <strong>Description: </strong>{book.description}
             </p>
+            </div>
+            </div>
         </>
     )
 }

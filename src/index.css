@@ -12,3 +12,31 @@ nav {
 nav a.active{
   font-weight: 700;
 }
+
+img {
+  max-width: 80%;
+}
+
+.books-img{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.book-flex{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.quote-flex{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.quote-border{
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+}
